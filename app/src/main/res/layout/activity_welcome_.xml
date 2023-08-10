@@ -1,0 +1,74 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:background="@drawable/bgrnd"
+    tools:context="com.example.ambicare.Welcome_Activity">
+
+    <ImageView
+        android:id="@+id/imgView_logo"
+        android:layout_width="189dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/bangers"
+        android:text="Med Rescue"
+        android:textColor="@color/quantum_vanillared500"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/baloo_chettan"
+        android:text="Select Appropriate Option:"
+        android:textColor="@color/places_text_black_alpha_87"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/patient"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_design"
+        android:fontFamily="sans-serif-medium"
+
+        android:onClick="sendMessage"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:text="I'm a Patient"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/driver"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_design"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="sendMessage2"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:text="I'm a Driver"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+</LinearLayout>
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ambicare.CustomerSettingsActivity"
+    android:orientation="vertical"
+    android:padding="20sp"
+    android:background="@drawable/bgrnd"
+    >
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="51dp"
+        app:srcCompat="@drawable/ambu"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Patient's Profile"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="34sp"
+        app:fontFamily="@font/baloo_chettan" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="18dp"
+        android:layout_marginBottom="20sp"
+        android:background="@drawable/rounded_edittext_background"
+        android:hint="Name" />
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="18dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:hint="Phone"
+        android:layout_marginBottom="20sp"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="18dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:hint="Age"
+        android:layout_marginBottom="20sp"
+        android:inputType="number"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm"
+        android:text="Confirm"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_design"
+        />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design"
+        android:text="Back" />
+</LinearLayout>
